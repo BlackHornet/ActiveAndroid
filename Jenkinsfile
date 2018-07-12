@@ -15,7 +15,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello World'
-                sh "./gradlew clean assemble'
+                sh "./gradlew clean assemble"
                 archiveArtifacts artifacts: 'app/build/outputs/apk/*.apk', fingerprint: true
             }
         }
