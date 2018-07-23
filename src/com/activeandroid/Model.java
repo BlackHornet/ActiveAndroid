@@ -84,7 +84,7 @@ public abstract class Model {
 			try {
 				Object value = field.get(this);
 
-				if (value != null) {
+				if (value != nu) {
 					final TypeSerializer typeSerializer = Cache.getParserForType(fieldType);
 					if (typeSerializer != null) {
 						// serialize data
